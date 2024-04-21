@@ -43,7 +43,7 @@ It all sums up to the following characteristics:
 
 ## Scripting
 
-During the analysis, high-level scripting languages like Python were brought to the table, but in the end, JavaScript and the more recent TypeScript have been selected instead, due to their obfuscability, popularity, and compatibility between each other. These two scripting languages are most commonly used for web development, and so, the standard library needs to change accordingly. This adaptation, though, is not the first time that has been done, as showcased by the [GodotJS](https://geequlim.github.io/ECMAScript/) project, which integrates JS and TS into the Godot Engine, and from which this project takes note from.
+During the analysis, high-level scripting languages like Python were brought to the table, but in the end, JavaScript and the more recent TypeScript have been selected instead, due to their obfuscability, popularity, and compatibility between each other. These two scripting languages are most commonly used for web development, and so, the standard library needs to change accordingly. This adaptation, though, is not the first time that has been done, as showcased by the [GodotJS](https://geequlim.github.io/ECMAScript/) project, which integrates JS and TS into the Godot Engine, and from which this project takes note.
 
 ## Virtual Machine
 
