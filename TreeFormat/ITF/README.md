@@ -2,49 +2,43 @@
 
 ## Index
 
-* ITF_static_body
-* ITF_rigid_body
-* ITF_soft_body
-* ITF_bone_chain
-* ITF_constraint
-* ITF_trigger
-* ITF_button
-* ITF_pickup
-* ITF_seat
+* ITF_artifact
+* ITF_audio
 * ITF_audio_emitter
 * ITF_audio_global
-* ITF_video_player
-* ITF_shader_material
-* ITF_mirror
+* ITF_avatar
+* ITF_bone_chain
+* ITF_button
 * ITF_canvas
-* ITF_state_machine
+* ITF_constraint
+* ITF_control_menu
+* ITF_eye_position
+* ITF_facial_rig
+* ITF_humanoid
+* ITF_itf_javascript
+* ITF_itf_typescript
 * ITF_js_class
+* ITF_lighting
+* ITF_mirror
+* ITF_physics
+* ITF_pickup
+* ITF_post_process
+* ITF_rigid_body
+* ITF_rules
+* ITF_seat
+* ITF_shader
+* ITF_shader_material
+* ITF_skybox
+* ITF_soft_body
+* ITF_state_machine
+* ITF_static_body
+* ITF_tracker_link
+* ITF_trigger
 * ITF_ts_class
-* ITF_WORLD_head
-* ITF_WORLD_skybox
-* ITF_WORLD_post_process
-* ITF_WORLD_physics
-* ITF_WORLD_lighting
-* ITF_WORLD_rules
-* ITF_AVATAR_head
-* ITF_AVATAR_humanoid
-* ITF_AVATAR_tracker_link
-* ITF_AVATAR_facial_rig
-* ITF_AVATAR_eye_position
-* ITF_AVATAR_voice_position
-* ITF_AVATAR_control_menu
-* ITF_ARTIFACT_head
-* ITF_RESOURCE_javascript
-* ITF_RESOURCE_typescript
-* ITF_RESOURCE_shader
-* ITF_RESOURCE_audio
-* ITF_RESOURCE_video
-
-## Design philosophy
-
-Following the general naming convention from the Khronos Group, all ITF extensions start with `ITF_`, followed by the name of the common extension, or `WORLD_`, `AVATAR_`, `ARTIFACT_`, or `UI_`, in case of that extension being constrained to one of those types. Alongside those node types, there's also the prefix `RESOURCE_`, to identify new resource types embebed in the buffer, such as audio and video.
-
-Asset typing is very important for ITF files, as all of them are incompatible with the others. These types will be defined in one of the root nodes of a scene, and contain metadata about the asset type. Their names are identified by the termination `head`.
+* ITF_video
+* ITF_video_player
+* ITF_voice_position
+* ITF_world
 
 ## Scene usage
 
