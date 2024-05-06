@@ -2,42 +2,31 @@
 
 ## Index
 
-* ITF_artifact
-* ITF_audio_emitter
-* ITF_audio_stream
-* ITF_avatar
-* ITF_button
-* ITF_canvas
-* ITF_constraint
-* ITF_control_menu
-* ITF_eye
-* ITF_facial_rig
-* ITF_humanoid
-* ITF_javascript
-* ITF_js_class
-* ITF_light_source
-* ITF_mirror
-* ITF_physics_bone
-* ITF_physics
-* ITF_pickup
-* ITF_post_process
-* ITF_rigid_body
-* ITF_rules
-* ITF_seat
-* ITF_shader
-* ITF_shader_material
-* ITF_skybox
-* ITF_soft_body
-* ITF_state_machine
-* ITF_static_body
-* ITF_tracker_link
-* ITF_trigger
-* ITF_ts_class
-* ITF_typescript
-* ITF_video_player
-* ITF_video_stream
-* ITF_voice_position
-* ITF_world
+* [ITF_artifact](./Extensions/ITF_artifact.md)
+* [ITF_audio_emitter](./Extensions/ITF_audio_emitter.md)
+* [ITF_audio_streams](./Extensions/ITF_audio_streams.md)
+* [ITF_avatar](./Extensions/ITF_avatar.md)
+* [ITF_button](./Extensions/ITF_button.md)
+* [ITF_canvas](./Extensions/ITF_canvas.md)
+* [ITF_class](./Extensions/ITF_class.md)
+* [ITF_constraint](./Extensions/ITF_constraint.md)
+* [ITF_control_menu](./Extensions/ITF_control_menu.md)
+* [ITF_light_source](./Extensions/ITF_light_source.md)
+* [ITF_mirror](./Extensions/ITF_mirror.md)
+* [ITF_physics_bone](./Extensions/ITF_physics_bone.md)
+* [ITF_pickup](./Extensions/ITF_pickup.md)
+* [ITF_rigid_body](./Extensions/ITF_rigid_body.md)
+* [ITF_scripts](./Extensions/ITF_scripts.md)
+* [ITF_seat](./Extensions/ITF_seat.md)
+* [ITF_shader](./Extensions/ITF_shader.md)
+* [ITF_shader_material](./Extensions/ITF_shader_material.md)
+* [ITF_soft_body](./Extensions/ITF_soft_body.md)
+* [ITF_state_machine](./Extensions/ITF_state_machine.md)
+* [ITF_static_body](./Extensions/ITF_static_body.md)
+* [ITF_trigger](./Extensions/ITF_trigger.md)
+* [ITF_video_player](./Extensions/ITF_video_player.md)
+* [ITF_video_streams](./Extensions/ITF_video_streams.md)
+* [ITF_world](./Extensions/ITF_world.md)
 
 ## Scene usage
 

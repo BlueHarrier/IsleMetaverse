@@ -25,15 +25,10 @@ This extension is incompatible with `ITF_world` and `ITF_artifact`, and it's uti
                 "Furry"
             ],
             "height": 1.59,
-            "features": [
-                "HEAD",
-                "HANDS",
-                "FINGERS",
-                "FEET",
-                "EYES",
-                "FACE",
-                "HAPTICS"
-            ]
+            "rig": {
+                "type": "HUMANOID",
+                "head": 
+            }
         }
     }
 }

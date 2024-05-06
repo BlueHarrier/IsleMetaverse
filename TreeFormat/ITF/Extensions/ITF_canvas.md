@@ -2,4 +2,8 @@
 
 ## Description
 
-Texture extension that allows for a cameras to be able to draw dynamically on them.
+Texture extension that allows for cameras and mirrors to draw dynamically on them.
+
+## Usage
+
+

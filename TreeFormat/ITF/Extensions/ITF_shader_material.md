@@ -2,4 +2,4 @@
 
 ## Description
 
-Material extension that defines a custom shader material, and gives value to its uniforms.
+Material extension that defines a custom shader material from a shader script, and gives value to its uniforms.
