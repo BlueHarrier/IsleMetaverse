@@ -1,32 +1,64 @@
 # ITF files
 
-## Index
+## Project extensions
 
-* [ITF_artifact](./Extensions/ITF_artifact.md)
-* [ITF_audio_emitter](./Extensions/ITF_audio_emitter.md)
-* [ITF_audio_streams](./Extensions/ITF_audio_streams.md)
-* [ITF_avatar](./Extensions/ITF_avatar.md)
-* [ITF_button](./Extensions/ITF_button.md)
-* [ITF_canvas](./Extensions/ITF_canvas.md)
-* [ITF_class](./Extensions/ITF_class.md)
-* [ITF_constraint](./Extensions/ITF_constraint.md)
-* [ITF_control_menu](./Extensions/ITF_control_menu.md)
-* [ITF_light_source](./Extensions/ITF_light_source.md)
-* [ITF_mirror](./Extensions/ITF_mirror.md)
-* [ITF_physics_bone](./Extensions/ITF_physics_bone.md)
-* [ITF_pickup](./Extensions/ITF_pickup.md)
-* [ITF_rigid_body](./Extensions/ITF_rigid_body.md)
-* [ITF_scripts](./Extensions/ITF_scripts.md)
-* [ITF_seat](./Extensions/ITF_seat.md)
-* [ITF_shader](./Extensions/ITF_shader.md)
-* [ITF_shader_material](./Extensions/ITF_shader_material.md)
-* [ITF_soft_body](./Extensions/ITF_soft_body.md)
-* [ITF_state_machine](./Extensions/ITF_state_machine.md)
-* [ITF_static_body](./Extensions/ITF_static_body.md)
-* [ITF_trigger](./Extensions/ITF_trigger.md)
-* [ITF_video_player](./Extensions/ITF_video_player.md)
-* [ITF_video_streams](./Extensions/ITF_video_streams.md)
-* [ITF_world](./Extensions/ITF_world.md)
+* [ISLE_animation_controller](./Extensions/ISLE_animation_controller.md)
+* [ISLE_artifact](./Extensions/ISLE_artifact.md)
+* [ISLE_avatar](./Extensions/ISLE_avatar.md)
+* [ISLE_button](./Extensions/ISLE_button.md)
+* [ISLE_canvas](./Extensions/ISLE_canvas.md)
+* [ISLE_control_menu](./Extensions/ISLE_control_menu.md)
+* [ISLE_mirror](./Extensions/ISLE_mirror.md)
+* [ISLE_pickup](./Extensions/ISLE_pickup.md)
+* [ISLE_script](./Extensions/ISLE_scripts.md)
+* [ISLE_shader_material](./Extensions/ISLE_shader_material.md)
+* [ISLE_soft_body](./Extensions/ISLE_soft_body.md)
+* [ISLE_video_display](./Extensions/ISLE_video_player.md)
+* [ISLE_world](./Extensions/ISLE_world.md)
+
+## Third-party extensions
+
+### Khronos Group
+
+* [KHR_animation_pointer](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_animation_pointer)
+* [KHR_draco_mesh_compression](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_draco_mesh_compression)
+* [KHR_lights_punctual](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_lights_punctual)
+* [KHR_materials_anisotropy](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_anisotropy)
+* [KHR_materials_clearcoat](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_clearcoat)
+* [KHR_materials_dispersion](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_dispersion)
+* [KHR_materials_emissive_strength](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_emissive_strength)
+* [KHR_materials_ior](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_ior)
+* [KHR_materials_iridescence](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_iridescence)
+* [KHR_materials_sheen](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_sheen)
+* [KHR_materials_specular](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_specular)
+* [KHR_materials_transmission](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_transmission)
+* [KHR_materials_unlit](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_unlit)
+* [KHR_materials_variants](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_variants)
+* [KHR_materials_volume](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_volume)
+* [KHR_mesh_quantization](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_mesh_quantization)
+* [KHR_texture_basisu](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_texture_basisu)
+* [KHR_texture_transform](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_texture_transform)
+* [KHR_xmp_json_ld](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_xmp_json_ld)
+
+### Open Metaverse Interoperability Group (OMI)
+
+* [KHR_audio_emitter](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/KHR_audio_emitter) (will be officially supported by the Khronos group soon)
+* [OMI_link](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_link)
+* [OMI_physics_body](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_body)
+* [OMI_physics_joint](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_joint)
+* [OMI_physics_shape](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_shape)
+* [OMI_seat](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_seat)
+* [OMI_spawn_point](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_spawn_point)
+
+### VRM Consortium
+
+* [VRMC_materials_hdr_emissiveMultiplier](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_materials_hdr_emissiveMultiplier-1.0)
+* [VRMC_materials_mtoon](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_materials_mtoon-1.0)
+* [VRMC_node_constraint](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_node_constraint-1.0)
+* [VRMC_springBone](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_springBone-1.0)
+* [VRMC_springBone_extended_collider](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_springBone_extended_collider-1.0)
+* [VRMC_vrm](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_vrm-1.0)
+* [VRMC_vrm_animation](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_vrm_animation-1.0)
 
 ## Scene usage
 
@@ -34,4 +66,4 @@ glTF 2.0 files can contain different scenes. ITF contemplates that feature and i
 
 ## File extension
 
-Any Isle Tree Format needs to be identified by a different extension, depending on what glTF 2.0 file format uses. The default format to use is `.glb` (binary), which will use the extension `.itf`, though, it's also possible to use the ASCII format, `.gltf`, in which case, the extension of the file will be `jitf` (Json Isle Tree Format).
+Any Isle Tree Format needs to be identified by a different extension, depending on what glTF 2.0 file format uses. The default format to use is `.glb` (binary), which will use the extension `.itf`, though, it's also possible to use the ASCII format, `.gltf`, in which case, the extension of the file will be `.jitf` (Json Isle Tree Format).
