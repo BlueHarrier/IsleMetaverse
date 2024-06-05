@@ -1,20 +1,25 @@
 # ITF files
 
+## Mandatory extensions
+
+Many suggestions by other groups have already been made, and so, most of them are already supported 
+
 ## Project extensions
 
-* ISLE_animation_controller
-* ISLE_artifact
-* ISLE_avatar
-* ISLE_button
-* ISLE_canvas
-* ISLE_control_menu
-* ISLE_mirror
-* ISLE_pickup
-* ISLE_script
-* ISLE_shader_material
-* ISLE_soft_body
-* ISLE_video_display
-* [ISLE_world](./Extensions/ISLE_world/README.md)
+* ⚫ ISLE_animation_controller
+* ⚫ ISLE_artifact
+* ⚫ ISLE_avatar
+* ⚫ ISLE_button
+* ⚫ ISLE_canvas
+* ⚫ ISLE_control_menu
+* 🔴 [ISLE_light_shadows](./Extensions/ISLE_light_shadows/)
+* ⚫ ISLE_mirror
+* ⚫ ISLE_pickup
+* ⚫ ISLE_script
+* ⚫ ISLE_shader_material
+* ⚫ ISLE_soft_body
+* ⚫ ISLE_video_display
+* 🔴 [ISLE_world](./Extensions/ISLE_world/)
 
 ## Third-party extensions
 
