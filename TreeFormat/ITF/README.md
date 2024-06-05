@@ -54,11 +54,8 @@
 
 * [VRMC_materials_hdr_emissiveMultiplier](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_materials_hdr_emissiveMultiplier-1.0)
 * [VRMC_materials_mtoon](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_materials_mtoon-1.0)
-* [VRMC_node_constraint](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_node_constraint-1.0)
-* [VRMC_springBone](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_springBone-1.0)
-* [VRMC_springBone_extended_collider](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_springBone_extended_collider-1.0)
-* [VRMC_vrm](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_vrm-1.0)
-* [VRMC_vrm_animation](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_vrm_animation-1.0)
+
+> Most VRMC extensions do not match the glTF 2.0 design pattern, and so, they cannot be used in ITF.
 
 ## Scene usage
 
