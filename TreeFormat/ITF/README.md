@@ -2,19 +2,19 @@
 
 ## Project extensions
 
-* [ISLE_animation_controller](./Extensions/ISLE_animation_controller.md)
-* [ISLE_artifact](./Extensions/ISLE_artifact.md)
-* [ISLE_avatar](./Extensions/ISLE_avatar.md)
-* [ISLE_button](./Extensions/ISLE_button.md)
-* [ISLE_canvas](./Extensions/ISLE_canvas.md)
-* [ISLE_control_menu](./Extensions/ISLE_control_menu.md)
-* [ISLE_mirror](./Extensions/ISLE_mirror.md)
-* [ISLE_pickup](./Extensions/ISLE_pickup.md)
-* [ISLE_script](./Extensions/ISLE_scripts.md)
-* [ISLE_shader_material](./Extensions/ISLE_shader_material.md)
-* [ISLE_soft_body](./Extensions/ISLE_soft_body.md)
-* [ISLE_video_display](./Extensions/ISLE_video_player.md)
-* [ISLE_world](./Extensions/ISLE_world.md)
+* ISLE_animation_controller
+* ISLE_artifact
+* ISLE_avatar
+* ISLE_button
+* ISLE_canvas
+* ISLE_control_menu
+* ISLE_mirror
+* ISLE_pickup
+* ISLE_script
+* ISLE_shader_material
+* ISLE_soft_body
+* ISLE_video_display
+* [ISLE_world](./Extensions/ISLE_world/README.md)
 
 ## Third-party extensions
 
@@ -55,7 +55,7 @@
 * [VRMC_materials_hdr_emissiveMultiplier](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_materials_hdr_emissiveMultiplier-1.0)
 * [VRMC_materials_mtoon](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_materials_mtoon-1.0)
 
-> Most VRMC extensions do not match the glTF 2.0 design pattern, and so, they cannot be used in ITF.
+> Most VRM Consortium extensions do not match the glTF 2.0 design pattern, and so, they cannot be used in ITF.
 
 ## Scene usage
 
