@@ -49,6 +49,18 @@ The Isle Tree Format (ITF) is a [glTF 2.0](https://github.com/KhronosGroup/glTF/
 
 > TODO: Design UI elements and styling.
 
+## Status
+
+Isle Ecosystem uses a system of colored levels to identify each extension's status quickly in the documentation:
+
+* Level 0, black ⚫: The extension is only suggested, which means it may either be implemented in the future, disappear, or change its name.
+* Level 1, red 🔴: The extension is now being worked on, so it's highly volatile, and probably not implementable.
+* Level 2, yellow 🟡: The extension is half way from completion, and can now be implemented, considering it can still have subtle changes.
+* Level 3, green 🟢: The extension is now ready to be implemented, and waiting for ratification by the Khronos Group.
+* Level 4, blue 🔵: The extension is in the process of being ratified by the Khronos Group and will soon become KHR instead of ISLE.
+* Level 5, white ⚪: The extension has been successfully ratified by the Khronos group and it's no longer being maintained by the Isle Ecosystem team.
+* Deprecated, purple 🟣: The extension is unsupported, no longer maintained, and will soon be removed completely from the ecosystem.
+
 ## Compatibility
 
 As it was mentioned earlier, other organizations have already implemented suggestions with similar purposes than ours, hence, most of them are compatible with the Tree Format. Besides all the [ratified Khronos extensions](https://github.com/KhronosGroup/glTF/tree/main/extensions#ratified-khronos-extensions-for-gltf-20), ITF compatible extensions are:
