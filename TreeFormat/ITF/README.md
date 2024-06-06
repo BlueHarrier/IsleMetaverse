@@ -13,7 +13,7 @@ Many suggestions by other groups have already been made, and so, most of them ar
 * 🔴 [ISLE_canvas](./Extensions/ISLE_canvas/)
 * ⚫ ISLE_control_menu
 * 🔴 [ISLE_light_shadows](./Extensions/ISLE_light_shadows/)
-* ⚫ ISLE_mirror
+* 🔴 [ISLE_mirror](./Extensions/ISLE_mirror/)
 * ⚫ ISLE_pickup
 * ⚫ ISLE_portal
 * ⚫ ISLE_script
