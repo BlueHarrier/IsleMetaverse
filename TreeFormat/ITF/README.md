@@ -20,7 +20,7 @@ Many suggestions by other groups have already been made, and so, most of them ar
 * ⚫ ISLE_shader_material
 * ⚫ ISLE_soft_body
 * ⚫ ISLE_video_display
-* 🔴 [ISLE_world](./Extensions/ISLE_world/)
+* ⚫ ISLE_world
 
 ## Third-party extensions
 
