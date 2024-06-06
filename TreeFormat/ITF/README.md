@@ -10,7 +10,7 @@ Many suggestions by other groups have already been made, and so, most of them ar
 * ⚫ ISLE_artifact
 * ⚫ ISLE_avatar
 * ⚫ ISLE_button
-* ⚫ ISLE_canvas
+* 🔴 [ISLE_canvas](./Extensions/ISLE_canvas/)
 * ⚫ ISLE_control_menu
 * 🔴 [ISLE_light_shadows](./Extensions/ISLE_light_shadows/)
 * ⚫ ISLE_mirror
