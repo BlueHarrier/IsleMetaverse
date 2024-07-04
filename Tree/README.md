@@ -6,7 +6,7 @@ Over the years, video game development workflows have evolved towards a tree str
 
 As each individual system has their own structure, there's no standard way of representing a scene tree. Formats like [glTF 2.0](https://github.com/KhronosGroup/glTF/tree/main/specification/2.0) try this, but during our first ITF implementation attempt, we found a lot of difficulties involving the static form of the tree, which makes it hard to make dynamic with ease. Instead, ITF departs from the same concept, but makes it dynamic, and takes immediate consideration on the scripting API to create a node - component system.
 
-To achieve this, ITF files use a Json structure to represent the type of asset, the resources required by this file, and the metadata. Another file type also exists, the ITL (Isle Tree Library), which contains only a collection of resources.
+To achieve this, ITF files use a Json structure to represent the scene tree, the resources required by this file, and the metadata. Another file type also exists, the ITR (Isle Tree Repository), which contains only a collection of resource paths for import.
 
 ## Definitions
 
