@@ -12,7 +12,7 @@ Some resources can be procedural, which means, they will not exist as files with
 
 ### Example
 
-Repositories can be directed using only a `uri`, in which case, there's a promise that the file or path specified will have a `manifest.itr`.
+Repositories can be directed using only an `uri`, in which case, there's a promise that the file or path specified will have a `manifest.itr`.
 
 > [!WARNING]
 > If the `manifest.itr` file is not located inside the repository, the repository will refuse to be load and discarded.
@@ -25,7 +25,7 @@ Repositories can be directed using only a `uri`, in which case, there's a promis
 }
 ```
 
-If the repository that wishes to be downloaded doesn't have a manifest file, the in-file manifest can be used. It follows the same structure that a `itr` file would.
+If the repository that wishes to be downloaded doesn't have a manifest file, the in-file manifest can be used. It follows the same structure that a `manifest.itr` file would.
 
 > [!WARNING]
 > If any of the files is not listed in the repository, that resource will be inaccessible.
@@ -81,7 +81,7 @@ Procedural resources don't require an `uri`, but still require a path in a repos
 
 ### Manifest
 
-In order to safely import resources from the internet into de Isle browser running the ecosystem, there must be a way to specify what resources are required, and how to load them. The manifest serves this purpose, by allowing the content creator to define what they need, from where within a repository, and what is it.
+In order to safely import resources from the internet into the Isle browser running the ecosystem, there must be a way to specify what resources are required, and how to load them. The manifest serves this purpose, by allowing the content creator to define what they need, from where within a repository, and what is it.
 
 Hence, the manifest doesn't have fixed properties, but keys, which are local paths to each resource, which are then expanded into what they are and how to import them.
 
