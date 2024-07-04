@@ -86,3 +86,7 @@ In order to safely import resources from the internet into the Isle browser runn
 Hence, the manifest doesn't have fixed properties, but keys, which are local paths to each resource, which are then expanded into what they are and how to import them.
 
 In order to create libraries or collections of resources, manifests can be introduced within a repository as `manifest.itr`, which will follow this structure.
+
+### Internal URIs and restrictions
+
+In order to access registered resources, it's necessary to use the `repo` protocol, so a resource of the `myRepository` repository, located in `path/of/resource`, would be accessed like this: `repo://myRepository/path/of/resource`. Some files exists with the intent of storing multiple resources, such as glTF, and so, those resources can be requested by following the internal structure of the file, so, to access a glTF mesh, it could be done like so: `repo://myRepository/path/to/gltf.glb/meshes/0`, which would return a usable imported `Mesh` resource that can be used. Like this, it's also posible to access other ITF files, including their repositories, but this can only be done in descending flow, so it's not possible for an ITF file to access its parent, if it has one.
