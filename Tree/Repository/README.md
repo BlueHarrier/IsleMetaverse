@@ -86,7 +86,3 @@ In order to safely import resources from the internet into the Isle browser runn
 Hence, the manifest doesn't have fixed properties, but keys, which are local paths to each resource, which are then expanded into what they are and how to import them.
 
 In order to create libraries or collections of resources, manifests can be introduced within a repository as `manifest.itr`, which will follow this structure.
-
-## References
-
-* [`Manifest` documentation](Manifest)
