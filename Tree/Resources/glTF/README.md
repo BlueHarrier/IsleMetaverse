@@ -1,26 +1,36 @@
-# ITF files
+# glTF files
 
-## Mandatory extensions
+## Introduction
 
-Many suggestions by other groups have already been made, and so, most of them are already supported 
+Due to the growing demand on the media, [glTF](https://github.com/KhronosGroup/glTF) was created to provide a standardized tree-like format, in a very generalized manner, and in an excellently simple way to implement. It can either contain a Json structure only (`.glTF`), or have a binary buffer as well to store more complex information too (`.glb`). This format has also become so popular due to its extensibility, as extensions can be easily implemented without breaking the original philosophy. Formats for VR have already been implemented in the past, like the [OMI group extensions](https://github.com/omigroup/gltf-extensions/tree/main), or the [VRM format](https://github.com/vrm-c/UniVRM).
+
+Though glTF was at first considered as a valid option to be the ITF format, their philosophy only provide a workflow valid for static scenes. In the metaverse, though, scenes are very dynamic, and will alter, create, and delete nodes, and for that reason, it's better to use glTF as resources instead.
+
+## Credits
+
+Thank you to all members in the [Khronos group](https://www.khronos.org/) for maintaining the glTF project, alongside other tens of open source projects for us, indie developers and communities, to use. We would not be able to do this without you.
+
+## Deprecated
+
+> [!WARNING]
+> Information beyond this point is being kept to act as a reference for future additions to the documentation, and it's deprecated. All classes need to be altered will be done through scene overrides inside the ITF file.
+
+## Status
+
+* Deprecated, purple 🟣: The extension is unsupported, no longer maintained, and will soon be removed completely from the ecosystem.
 
 ## Project extensions
 
-* ⚫ ISLE_animation_controller
-* ⚫ ISLE_artifact
-* ⚫ ISLE_avatar
-* ⚫ ISLE_button
-* 🔴 [ISLE_canvas](./Extensions/ISLE_canvas/)
-* ⚫ ISLE_control_menu
-* 🔴 [ISLE_light_shadows](./Extensions/ISLE_light_shadows/)
-* 🔴 [ISLE_mirror](./Extensions/ISLE_mirror/)
-* ⚫ ISLE_pickup
-* ⚫ ISLE_portal
-* ⚫ ISLE_script
-* ⚫ ISLE_shader_material
-* ⚫ ISLE_soft_body
-* ⚫ ISLE_video_display
-* ⚫ ISLE_world
+* 🟣 ISLE_animation_controller
+* 🟣 [ISLE_canvas](./Extensions/ISLE_canvas/)
+* 🟣 ISLE_control_menu
+* 🟣 [ISLE_light_shadows](./Extensions/ISLE_light_shadows/)
+* 🟣 [ISLE_mirror](./Extensions/ISLE_mirror/)
+* 🟣 ISLE_portal
+* 🟣 ISLE_script
+* 🟣 ISLE_shader_material
+* 🟣 ISLE_soft_body
+* 🟣 ISLE_video_display
 
 ## Third-party extensions
 
@@ -56,17 +66,4 @@ Many suggestions by other groups have already been made, and so, most of them ar
 * [OMI_seat](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_seat)
 * [OMI_spawn_point](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_spawn_point)
 
-### VRM Consortium
 
-* [VRMC_materials_hdr_emissiveMultiplier](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_materials_hdr_emissiveMultiplier-1.0)
-* [VRMC_materials_mtoon](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_materials_mtoon-1.0)
-
-> Most VRM Consortium extensions do not match the glTF 2.0 design pattern, and so, they cannot be used in ITF.
-
-## Scene usage
-
-glTF 2.0 files can contain different scenes. ITF contemplates that feature and integrates it so one of these files can have multiple scenes, each scene being one different resource. The goal is to give content creators the ability to make libraries which hold different content and content types within. This can also help create variants of one asset types, allowing for better optimization as less resources can be stored at a time, practice that is very common to do for avatars.
-
-## File extension
-
-Any Isle Tree Format needs to be identified by a different extension, depending on what glTF 2.0 file format uses. The default format to use is `.glb` (binary), which will use the extension `.itf`, though, it's also possible to use the ASCII format, `.gltf`, in which case, the extension of the file will be `.jitf` (Json Isle Tree Format).
