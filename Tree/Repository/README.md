@@ -9,15 +9,15 @@ The corresponding URI to access these sources will use the protocol `repo://`, f
 > [!NOTE]
 > Check the [Importer class documentation](./Importer/) for more information.
 
-### Properties
+## Properties
 
 Each property of the repository corresponds to the alias that the source receives to be accessed locally using `repo://` within the project, and defines with a string the URI of the actual source.
 
-#### Project source
+### Project source
 
 Most projects may have a project source. This is the one that is used by default, and so, the name of the repository can be omitted in the URI. This project source will be named `.`, and will allow resources to be accessed directly in this way: `repo://path/to/resource`.
 
-#### Example
+### Example
 
 ```json
 {
@@ -31,7 +31,7 @@ In the previous example, all files in the project source (`.`) can be accessed f
 > [!TIP]
 > Sometimes, depending on the server implementation, the project source may be pointing to the same path where the file was loaded from: `".": "."`.
 
-### Sources
+## Sources
 
 A source is essentially the location where all the importable files are located. This source can be a raw path, in which case, the resource indexing process might be a bit slow, or rather a path to a compressed file, which can be a zip, tar, or tgz, though, the same logic will be applied to all of them.
 
@@ -54,13 +54,23 @@ The `index.json` file will have the following structure:
 }
 ```
 
-| Property | Type | Description | Required |
-|----------|------|-------------|----------|
-| `class` | `String` | Name of the importer class that should be used whenever the asset needs to be loaded. | Yes |
-| `settings` | `Object` | Object that contains the settings required to import the resource. It can be overloaded with additional data that some specific client API implementations might use. | No |
+| Property | Type | Required |
+|----------|------|----------|
+| `class` | `String` | Yes |
+| `settings` | `Object` | No |
 
 > [!IMPORTANT]
 > If there's any error during the import process, the reference to the resource will be invalidated, and so, the resource will not be accessible.
 
 > [!TIP]
 > Clients shouldn't load all resources while the index process is happening, but as the nodes and application requires them, as some custom importers might not even be available yet.
+
+### Property descriptions
+
+#### `String` class
+
+Name of the importer class that should be used whenever the asset needs to be loaded.
+
+#### `Object` settings
+
+Object that contains the settings required to import the resource. It can be overloaded with additional data that some specific client API implementations might use.
