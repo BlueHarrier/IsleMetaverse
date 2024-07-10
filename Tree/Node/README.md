@@ -7,8 +7,8 @@ Nodes are the unit of the scene tree. They are interrelated objects that inherit
 | Property | Type | Required |
 |----------|------|----------|
 | `children` | `[String]: Node` | No |
-| `modules` | `[String]: Module | Module[]` | No |
-| `template` | `String | Template` | No |
+| `modules` | `[String]: Module \| Module[]` | No |
+| `template` | `String \| Template` | No |
 
 ## Property descriptions
 
