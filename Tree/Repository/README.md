@@ -7,7 +7,7 @@ Though some elements of the scene can be created in real time, other more comple
 The corresponding URI to access these sources will use the protocol `repo://`, followed by the name of the repository, and the path to the desired resource, like so: `repo://MyRepository:path/to/resource`. The API will do the connection with the pre-downloaded asset and will return the imported resource.
 
 > [!NOTE]
-> Check the [Importer class documentation](./Importer/) for more information.
+> Check the [Importer interface documentation](./Importer/) for more information.
 
 ## Properties
 
