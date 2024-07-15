@@ -6,22 +6,23 @@ Nodes are the unit of the scene tree. They are interrelated objects that inherit
 
 | Property | Type | Required |
 |----------|------|----------|
-| `children` | `[String]: Node` | No |
-| `modules` | `[String]: Module \| Module[]` | No |
-| `template` | `String \| Template` | No |
+| `children` | `Object` | No |
+| `modules` | `Object` | No |
+| `template` | `String` | No |
+| `settings` | `Object` | No |
 
 ## Property descriptions
 
-### `[String]: Node` children
+### `Object` children
 
 A collection of named `Node` children.
 
 > [!IMPORTANT]
-> The name of children nodes cannot start with "@" or "$", due to those characters being reserved to identify avatars and user-summoned assets, respectively.
+> The name of children nodes cannot start with "@" or "$", and cannot contain ":", due to those characters being reserved to identify avatars, user-summoned assets, and modules in paths, respectively.
 
-### `[String]: Module | Module[]` modules
+### `Object` modules
 
-A collection of the `Module` objects that compose the behavior of the node. The keys of this `Object` are the names of the modules to attach, while the value can be a `Module` or an array of them, if there's more than one module implemented.
+A collection of the `Module` objects that compose the behavior of the node. The keys of this object are the names of the modules to attach, while the value can be a `Module` object, or an array of them, if there's more than one of that module implemented.
 
 #### Example
 
@@ -32,18 +33,19 @@ A collection of the `Module` objects that compose the behavior of the node. The 
     },
     "MyMultipleModule": [
         {
-            // Settings of the first module of this type
+            // Settings of the first instance of this module
         },
         {
-            // Settings of the second module of this type
+            // Settings of the second instance of this module
         }
     ]
 }
 ```
 
-### `String | Template` template
+### `String` template
 
-`Template` resource that this node inherits from. In case of this value being defined, children might no longer be added if they exist in the template, but rather modify the template nodes.
+URI to a `Template` resource that this node will inherit from. In case of this value being defined, children might no longer be added if they exist in the template, but rather replace the template nodes.
 
-> [!WARNING]
-> This part is still in development, as for now this specification can only override pre-existing values and add new ones, but not delete any.
+### `Object` settings
+
+Settings of the `TemplateImporter` object, used to change import settings of it, and alter, override, or delete values.
