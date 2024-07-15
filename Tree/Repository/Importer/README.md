@@ -1,4 +1,4 @@
-# Importer\<T: Resource> (interface)
+# Importer (interface)
 
 ## Overview
 
@@ -6,26 +6,26 @@ Importing resources can be a bit tricky sometimes. There are a lot of formats po
 
 | Method | Returns | Required |
 |--------|---------|----------|
-| `export(settings: Object, file: File)` | `Number` | No |
-| `import(settings: Object, file: File)` | `T` | Yes |
-| `validate(settings: Object, file: File)` | `Number` | No |
+| `export(Resource resource, String uri)` | `Number` | No |
+| `import(Object settings, String uri)` | `Resource` | Yes |
+| `validate(Object settings, String uri)` | `Number` | No |
 
 ## Method descriptions
 
-### `Number` export(settings: `Object`, file: `File`)
+### `Number` export(`Object` settings, `String` uri)
 
 Tries to export the resource into the specified file, and write its settings for export. If not implemented, it will return `0` (OK).
 
 > [!NOTE]
 > This function is more commonly used for editors.
 
-### `T` import(settings: `Object`, file: `File`)
+### `Resource` import(`Object` settings, `String` uri)
 
 Imports the file in the system, returning the corresponding type of the `Resource`.
 
 > [!IMPORTANT]
-> This function will only execute after `validate`, so it's assumed that the resource exists and it's valid.
+> This function will only execute after `validate` has returned a `0`, so it's assumed that the resource exists and it's valid.
 
-### `Number` validate(settings: `Object`, file: `File`)
+### `Number` validate(`Object` settings, `String` uri)
 
 Validates the file and the settings, and returns an error code if it fails. If not implemented, it will return `0` (OK). If an error is returned, the resource will be considered invalid, and so, discarded.
