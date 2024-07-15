@@ -88,7 +88,7 @@ Adds another child to the node, with a specified name.
 > [!NOTE]
 > If this parameter is left empty, or it's invalid, the name that will be set instead is `"nodeN"`, where N is the number of children the node has before its instantiation.
 
-### addModule(`Module` module)`
+### addModule(`Module` module)
 
 Adds a new module to the node.
 
