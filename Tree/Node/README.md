@@ -4,12 +4,12 @@
 
 Nodes are the unit of the scene tree. They are interrelated objects that inherit one from another, creating a collection of parents and children, each with unique properties and behaviors. They might also inherit from a template, which are other imported ITF structures.
 
-| Property | Type | Required |
-|----------|------|----------|
-| `children` | `Object` | No |
-| `modules` | `Object` | No |
-| `settings` | `Object` | No |
-| `template` | `String` | No |
+| Property | Type | JSON | Script |
+|----------|------|------|--------|
+| `children` | `Object` | Yes, not required | No |
+| `modules` | `Object` | Yes, not required | No |
+| `settings` | `Object` | Yes, not required | No |
+| `template` | `String` | Yes, not required | No |
 
 | Method | Returns |
 |--------|---------|

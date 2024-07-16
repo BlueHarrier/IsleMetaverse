@@ -9,7 +9,13 @@ The corresponding URI to access these sources will use the protocol `repo://`, f
 > [!NOTE]
 > Check the [Importer interface documentation](./Importer/) for more information.
 
+| Property | Type | JSON | Script |
+|----------|------|------|--------|
+| Repository name | `String` | Yes | No |
+
 ## Property descriptions
+
+### `String` Repository name
 
 Each property of the repository corresponds to the alias that the source receives to be accessed locally using `repo://` within the project, and defines with a string the URI of the actual source.
 

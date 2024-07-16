@@ -6,9 +6,9 @@ Modules exist to implement behaviors to the nodes. There are plenty of different
 
 Modules are handled through the use of events that are periodically called by the node or other modules. In order to register and unregister them, the methods `enterNode()` and `exitNode()` are used.
 
-| Property | Type |
-|----------|------|
-| `node` | `Node` |
+| Property | Type | JSON | Script |
+|----------|------|------|--------|
+| `node` | `Node` | No | Yes |
 
 | Method | Returns | Required |
 |--------|---------|----------|
