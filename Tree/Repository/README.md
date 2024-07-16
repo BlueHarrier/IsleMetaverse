@@ -19,7 +19,7 @@ The corresponding URI to access these sources will use the protocol `repo://`, f
 
 Each property of the repository corresponds to the alias that the source receives to be accessed locally using `repo://` within the project, and defines with a string the URI of the actual source.
 
-### Project source
+## Project source
 
 Most projects may have a project source. This is the one that is used by default, and so, the name of the repository can be omitted in the URI. This project source will be named `.` in the repository, and will allow resources to be accessed directly in this way: `repo://path/to/resource`.
 
