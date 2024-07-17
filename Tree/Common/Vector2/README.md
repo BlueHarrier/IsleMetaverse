@@ -29,10 +29,12 @@ A two dimensional vector, with x and y components. Contains basic operations lik
 | `abs()` | `Vector2` |
 | `add(Number b)` | `Vector2` |
 | `addVector(Vector2 b)` | `Vector2` |
+| `angle()` | `Number` |
 | `angleTo(Vector position)` | `Number` |
 | `angleWith(Vector2 b)` | `Number` |
 | `ceil()` | `Vector2` |
 | `clamp(Vector2 min, Vector2 max)` | `Vector2` |
+| `cross(Vector2 b)` | `Number` |
 | `div(Number b)` | `Vector2` |
 | `divVector(Vector2 b)` | `Vector2` |
 | `distance(Vector2 b)` | `Number` |
@@ -44,6 +46,7 @@ A two dimensional vector, with x and y components. Contains basic operations lik
 | `greaterThan(Vector2 b)` | `Boolean` |
 | `lerp(Vector2 b, Number weight)` | `Vector2` |
 | `length()` | `Number` |
+| `lengthSquared()` | `Number` |
 | `lessEquals(Vector2 b)` | `Boolean` |
 | `lessThan(Vector2 b)` | `Boolean` |
 | `mod(Number b)` | `Vector2` |
@@ -51,8 +54,11 @@ A two dimensional vector, with x and y components. Contains basic operations lik
 | `mul(Vector2 b)` | `Vector2` |
 | `mulVector(Vector2 b)` | `Vector2` |
 | `normalized()` | `Vector2` |
+| `normalizeInPlace()` | `Undefined` |
 | `reflect(Vector2 b)` | `Vector2` |
+| `rotate(Number angle)` | `Vector2` |
 | `round()` | `Vector2` |
+| `set(Number x, Number y)` | `Undefined` |
 | `sub(Number b)` | `Vector2` |
 | `subVector(Vector2 b)` | `Vector2` |
 
@@ -120,13 +126,17 @@ Creates a new vector, result of adding the same number to each component individ
 
 Creates a new vector, result of adding each component individually.
 
+### `Number` angle()
+
+Returns the angle of the vector relative to `Vector2.RIGHT`, in radians.
+
 ### `Number` angleTo(`Vector2` position)
 
-Checks the angle of the original vector to another vector, considering they're positions, and not directions.
+Checks the angle of the original vector to another vector, considering they're positions, and not directions. The angle is returned in radians.
 
 ### `Number` angleWith(`Vector2` b)
 
-Compares the angle between two vectors.
+Returns the angle between the two vectors, in radians.
 
 ### `Vector2` ceil()
 
@@ -135,6 +145,10 @@ Returns the same as `Math.ceil()`, but as a new vector, result of being performe
 ### `Vector2` clamp(`Vector2` min, `Vector2` max)
 
 Returns the same as `Math.clamp()`, but as a new vector, result of being performed for each component of the original one. Clamping a number is essentially forcing it to stay between the minimum and the maximum values.
+
+### `Number` cross(`Vector2` b)
+
+Returns the cross product with the other vector. This is usually not possible to do in two dimensions, but it's possible to calculate the cross product of two vectors in 3D space, by adding a third dimension to the vectors, and then calculating the cross product. The returning value would be the z component of the resulting vector.
 
 ### `Vector2` div(`Number` b)
 
@@ -180,6 +194,10 @@ Linearly interpolates each component of the vector using the given weight. The m
 
 Returns the length of the vector.
 
+### `Number` lengthSquared()
+
+Returns the squared length of the vector. This is useful for comparing the length of two vectors without the need of calculating the square root.
+
 ### `Boolean` lessEquals(`Vector2` b)
 
 Returns true if all the components of the object are less than or equals to b's.
@@ -211,6 +229,10 @@ Returns a normalized copy of the vector. A normalized vector's length is always 
 > [!CAUTION]
 > If the length of the vector is 0, the resulting vector will be populated with zeros as well.
 
+### `Undefined` normalizeInPlace()
+
+Normalizes the vector in the same object, preventing the creation of a new vector. A normalized vector's length is always one, and it's the result of running `vec.div(vec.length())`.
+
 ### `Vector2` reflect(`Vector2` b)
 
 Creates a new vector, result of reflecting this one over b.
@@ -218,6 +240,10 @@ Creates a new vector, result of reflecting this one over b.
 ### `Vector2` round()
 
 Returns the same as `Math.round()`, but as a new vector, result of being performed for each component of the original one. When rounding values, the number will become the closest integer.
+
+### `Undefined` set(`Number` x, `Number` y)
+
+Sets the x and y components of the vector at once.
 
 ### `Vector2` sub(`Number` b)
 
