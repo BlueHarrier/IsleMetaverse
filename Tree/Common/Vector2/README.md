@@ -30,7 +30,7 @@ A two dimensional vector, with x and y components. Contains basic operations lik
 | `add(Number b)` | `Vector2` |
 | `addVector(Vector2 b)` | `Vector2` |
 | `angle()` | `Number` |
-| `angleTo(Vector position)` | `Number` |
+| `angleTo(Vector2 position)` | `Number` |
 | `angleWith(Vector2 b)` | `Number` |
 | `ceil()` | `Vector2` |
 | `clamp(Vector2 min, Vector2 max)` | `Vector2` |
