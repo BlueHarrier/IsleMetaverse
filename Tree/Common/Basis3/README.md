@@ -27,6 +27,7 @@ A Basis3 is a 3x3 matrix that can represent a combination of rotation and scale.
 | `determinant()` | `Number` |
 | `equals(Basis3 b)` | `Boolean` |
 | `inverse()` | `Basis3` |
+| `lerp(Basis3 b, Number weight)` | `Basis3` |
 | `matrix()` | `Number[]` |
 | `mul(Basis3 b)` | `Basis3` |
 | `orthonormalized()` | `Basis3` |
@@ -97,6 +98,10 @@ Returns whether this basis is equal or approximately equals to the given basis.
 ### `Basis3` inverse()
 
 Returns the inverse of the basis. If the determinant is zero, the result is the identity basis.
+
+### `Basis3` lerp(`Basis3` b, `Number` weight)
+
+Returns a new basis that is the linear interpolation between this basis and the given basis.
 
 ### `Number[]` matrix()
 

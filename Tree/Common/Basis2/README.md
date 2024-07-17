@@ -27,6 +27,7 @@ A Basis2 is a 2x2 matrix, used for 2D transformations. It is used in many places
 | `determinant()` | `Number` |
 | `equals(Basis2 b)` | `Boolean` |
 | `inverse()` | `Basis2` |
+| `lerp(Basis2 b, Number weight)` | `Basis2` |
 | `matrix()` | `Number[]` |
 | `mul(Basis2 b)` | `Basis2` |
 | `rotate(Vector2 position)` | `Vector2` |
@@ -88,6 +89,10 @@ Returns whether the basis is equal or approximately equal to another basis.
 ### `Basis2` inverse()
 
 Returns the inverse of the basis. If the determinant is zero, the basis is not invertible, but the method will return an identity basis.
+
+### `Basis2` lerp(`Basis2` b, `Number` weight)
+
+Returns a new basis that is the linear interpolation between this basis and another basis.
 
 ### `Number[]` matrix()
 
