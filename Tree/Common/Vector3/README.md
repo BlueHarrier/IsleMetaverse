@@ -64,9 +64,8 @@ A three dimensional vector, with x, y, and z components. Contains basic operatio
 | `normalized()` | `Vector3` |
 | `normalizeInPlace()` | `Undefined` |
 | `reflect(Vector3 b)` | `Vector3` |
-| `rotate(Number angle)` | `Vector3` |
 | `round()` | `Vector3` |
-| `set(Number x, Number y)` | `Undefined` |
+| `set(Number x, Number y, Number z)` | `Undefined` |
 | `sub(Number b)` | `Vector3` |
 | `subVector(Vector3 b)` | `Vector3` |
 
@@ -76,7 +75,7 @@ A three dimensional vector, with x, y, and z components. Contains basic operatio
 
 Default constructor, populated with zeros on each component.
 
-### Vector3(`Number` x, `Number` y)
+### Vector3(`Number` x, `Number` y, `Number` z)
 
 Creates a vector from two numeric components.
 
@@ -281,9 +280,9 @@ Creates a new vector, result of reflecting this one over b.
 
 Returns the same as `Math.round()`, but as a new vector, result of being performed for each component of the original one. When rounding values, the number will become the closest integer.
 
-### `Undefined` set(`Number` x, `Number` y)
+### `Undefined` set(`Number` x, `Number` y, `Number` z)
 
-Sets the x and y components of the vector at once.
+Sets the x, y, and z components of the vector at once.
 
 ### `Vector3` sub(`Number` b)
 
