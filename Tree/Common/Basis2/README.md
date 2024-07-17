@@ -41,7 +41,7 @@ A Basis2 is a 2x2 matrix, used for 2D transformations. It is used in many places
 
 ### `Basis2` Basis2()
 
-Creates a new basis with the values `(1, 0, 0, 1)` (identity).
+Creates a new basis with the values (1, 0, 0, 1) (identity).
 
 ### `Basis2` Basis2(`Vector2` x, `Vector2` y)
 

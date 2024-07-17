@@ -44,7 +44,7 @@ A Basis3 is a 3x3 matrix that can represent a combination of rotation and scale.
 
 ### `Basis3` Basis3()
 
-Creates a new basis with the values `(1, 0, 0, 0, 1, 0, 0, 0, 1)` (identity).
+Creates a new basis with the values (1, 0, 0, 0, 1, 0, 0, 0, 1) (identity).
 
 ### `Basis3` Basis3(`Vector3` x, `Vector3` y, `Vector3` z)
 
@@ -70,7 +70,7 @@ Creates a new basis from the given basis.
 
 ### `Basis3` IDENTITY
 
-The identity basis, with the values `(1, 0, 0, 0, 1, 0, 0, 0, 1)`. This basis has no rotation or scale, and any vector transformed by it will remain the same.
+The identity basis, with the values (1, 0, 0, 0, 1, 0, 0, 0, 1). This basis has no rotation or scale, and any vector transformed by it will remain the same.
 
 ## Property descriptions
 
