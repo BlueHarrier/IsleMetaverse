@@ -18,8 +18,8 @@ A Transform2 is a 2D transformation matrix (3x3). It is used to store and manipu
 
 | Property | Type | JSON | Script |
 |----------|------|------|--------|
-| `position` | `Vector2` | Yes | Yes |
 | `basis` | `Basis2` | Yes | Yes |
+| `position` | `Vector2` | Yes | Yes |
 
 | Method | Returns |
 |--------|---------|
