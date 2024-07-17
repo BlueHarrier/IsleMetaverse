@@ -40,7 +40,6 @@ A two dimensional vector, with x and y components. Contains basic operations lik
 | `distance(Vector2 b)` | `Number` |
 | `dot(Vector2 b)` | `Number` |
 | `equals(Vector2 b)` | `Boolean` |
-| `flip()` | `Vector2` |
 | `floor()` | `Vector2` |
 | `greaterEquals(Vector2 b)` | `Boolean` |
 | `greaterThan(Vector2 b)` | `Boolean` |
@@ -59,6 +58,7 @@ A two dimensional vector, with x and y components. Contains basic operations lik
 | `modVector(Vector2 b)` | `Vector2` |
 | `mul(Vector2 b)` | `Vector2` |
 | `mulVector(Vector2 b)` | `Vector2` |
+| `negate()` | `Vector2` |
 | `normalized()` | `Vector2` |
 | `normalizeInPlace()` | `Undefined` |
 | `reflect(Vector2 b)` | `Vector2` |
@@ -176,10 +176,6 @@ Returns the dot product with the other vector, this is the multiplication betwee
 
 Checks if two vectors are equivalent, or approximately equivalent, in case they have decimals.
 
-### `Vector2` flip()
-
-Returns a copy of the vector, but with the sign of each component swapped.
-
 ### `Vector2` floor()
 
 Returns the same as `Math.floor()`, but as a new vector, result of being performed for each component of the original one. The floor value is the value of a number rounded downwards to the previous integer number.
@@ -251,6 +247,10 @@ Creates a new vector, result of multiplying the same number to each component in
 ### `Vector2` mulVector(`Vector2` b)
 
 Creates a new vector, result of multiplying each component individually.
+
+### `Vector2` negative()
+
+Returns the negative of the vector, which is the same as multiplying it by -1.
 
 ### `Vector2` normalized()
 
