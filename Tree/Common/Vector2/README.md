@@ -49,6 +49,12 @@ A two dimensional vector, with x and y components. Contains basic operations lik
 | `lengthSquared()` | `Number` |
 | `lessEquals(Vector2 b)` | `Boolean` |
 | `lessThan(Vector2 b)` | `Boolean` |
+| `max(Number b)` | `Vector2` |
+| `maxVector(Vector2 b)` | `Vector2` |
+| `maxDistance(Number b)` | `Undefined` |
+| `min(Number b)` | `Vector2` |
+| `minVector(Vector2 b)` | `Vector2` |
+| `minDistance(Number b)` | `Undefined` |
 | `mod(Number b)` | `Vector2` |
 | `modVector(Vector2 b)` | `Vector2` |
 | `mul(Vector2 b)` | `Vector2` |
@@ -205,6 +211,30 @@ Returns true if all the components of the object are less than or equals to b's.
 ### `Boolean` lessThan(`Vector2` b)
 
 Returns true if all the components of the object are less than b's.
+
+### `Vector2` max(`Number` b)
+
+Returns the result of performing `Math.max()` for each component of the original vector. The max value is the highest value of a number.
+
+### `Undefined` maxDistance(`Number` b)
+
+Prevents the vector from being longer than the given value. If the vector is longer than the given value, it will be shortened to match it.
+
+### `Vector2` maxVector(`Vector2` b)
+
+Returns the same as `Math.max()`, but as a new vector, result of being performed for each component of the original one. The max value is the highest value of a number.
+
+### `Vector2` min(`Number` b)
+
+Returns the result of performing `Math.min()` for each component of the original vector. The min value is the lowest value of a number.
+
+### `Undefined` minDistance(`Number` b)
+
+Prevents the vector from being shorter than the given value. If the vector is shorter than the given value, it will be lengthened to match it.
+
+### `Vector2` minVector(`Vector2` b)
+
+Returns the same as `Math.min()`, but as a new vector, result of being performed for each component of the original one. The min value is the lowest value of a number.
 
 ### `Vector2` mod(`Number` b)
 
