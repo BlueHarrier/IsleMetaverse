@@ -1,21 +1,21 @@
-# Basis
+# Basis3
 
 ## Overview
 
-A Basis is a 3x3 matrix that can represent a combination of rotation and scale. It is used in many places in the ecosystem, such as transforms, physics, and rendering.
+A Basis3 is a 3x3 matrix that can represent a combination of rotation and scale. It is used in many places in the ecosystem, such as transforms, physics, and rendering.
 
 | Constructors |
 |--------------|
-| `Basis()` |
-| `Basis(Vector3 x, Vector3 y, Vector3 z)` |
-| `Basis(Quaternion rotation)` |
-| `Basis(Vector3 scale)` |
-| `Basis(Quaternion rotation, Vector3 scale)` |
-| `Basis(Basis from)` |
+| `Basis3()` |
+| `Basis3(Vector3 x, Vector3 y, Vector3 z)` |
+| `Basis3(Quaternion rotation)` |
+| `Basis3(Vector3 scale)` |
+| `Basis3(Quaternion rotation, Vector3 scale)` |
+| `Basis3(Basis3 from)` |
 
 | Constants | Type | Value |
 |-----------|------|-------|
-| `IDENTITY` | `Basis` | `(1, 0, 0, 0, 1, 0, 0, 0, 1)` |
+| `IDENTITY` | `Basis3` | `(1, 0, 0, 0, 1, 0, 0, 0, 1)` |
 
 | Property | Type | JSON | Script |
 |----------|------|------|--------|
@@ -25,49 +25,49 @@ A Basis is a 3x3 matrix that can represent a combination of rotation and scale. 
 | Method | Returns |
 |--------|---------|
 | `determinant()` | `Number` |
-| `equals(Basis b)` | `Boolean` |
-| `inverse()` | `Basis` |
+| `equals(Basis3 b)` | `Boolean` |
+| `inverse()` | `Basis3` |
 | `matrix()` | `Number[]` |
-| `mul(Basis b)` | `Basis` |
-| `orthonormalized()` | `Basis` |
+| `mul(Basis3 b)` | `Basis3` |
+| `orthonormalized()` | `Basis3` |
 | `orthonormalizeInPlace()` | `Undefined` |
 | `rotate(Vector3 position)` | `Vector3` |
 | `rowX()` | `Vector3` |
 | `rowY()` | `Vector3` |
 | `rowZ()` | `Vector3` |
 | `transform(Vector3 position)` | `Vector3` |
-| `transposed()` | `Basis` |
+| `transposed()` | `Basis3` |
 | `transposeInPlace()` | `Undefined` |
 
 ## Constructor descriptions
 
-### `Basis` Basis()
+### `Basis3` Basis3()
 
 Creates a new basis with the values `(1, 0, 0, 0, 1, 0, 0, 0, 1)` (identity).
 
-### `Basis` Basis(`Vector3` x, `Vector3` y, `Vector3` z)
+### `Basis3` Basis3(`Vector3` x, `Vector3` y, `Vector3` z)
 
 Creates a new basis with the given vectors as the basis vectors.
 
-### `Basis` Basis(`Quaternion` rotation)
+### `Basis3` Basis3(`Quaternion` rotation)
 
 Creates a new basis from the given rotation.
 
-### `Basis` Basis(`Vector3` scale)
+### `Basis3` Basis3(`Vector3` scale)
 
 Creates a new basis from the given scale.
 
-### `Basis` Basis(`Quaternion` rotation, `Vector3` scale)
+### `Basis3` Basis3(`Quaternion` rotation, `Vector3` scale)
 
 Creates a new basis from the given rotation and scale.
 
-### `Basis` Basis(`Basis` from)
+### `Basis3` Basis3(`Basis3` from)
 
 Creates a new basis from the given basis.
 
 ## Constant descriptions
 
-### `Basis` IDENTITY
+### `Basis3` IDENTITY
 
 The identity basis, with the values `(1, 0, 0, 0, 1, 0, 0, 0, 1)`. This basis has no rotation or scale, and any vector transformed by it will remain the same.
 
@@ -90,11 +90,11 @@ Returns the determinant of the basis.
 > [!WARNING]
 > If the determinant is zero, the basis is not invertible.
 
-### `Boolean` equals(`Basis` b)
+### `Boolean` equals(`Basis3` b)
 
 Returns whether this basis is equal or approximately equals to the given basis.
 
-### `Basis` inverse()
+### `Basis3` inverse()
 
 Returns the inverse of the basis. If the determinant is zero, the result is the identity basis.
 
@@ -102,11 +102,11 @@ Returns the inverse of the basis. If the determinant is zero, the result is the 
 
 Returns the basis as a 3x3 matrix. This matrix is represented as an array of 9 numbers.
 
-### `Basis` mul(`Basis` b)
+### `Basis3` mul(`Basis3` b)
 
 Returns the result of multiplying this basis by the given basis. This is equivalent to applying the transformations of both bases in sequence, and the result will be the same as multiplying the matrices of both bases, or the same as multiplying the quaternions and vectors of both bases.
 
-### `Basis` orthonormalized()
+### `Basis3` orthonormalized()
 
 Returns a new basis that is orthonormalized. This means that the basis vectors are normalized and orthogonal to each other.
 
@@ -134,7 +134,7 @@ Returns the z basis vector.
 
 Transforms the given position by the basis, including the scale.
 
-### `Basis` transposed()
+### `Basis3` transposed()
 
 Returns the transposed basis. This is equivalent to swapping the rows and columns of the basis matrix.
 
