@@ -27,7 +27,7 @@ Worlds are nodes that contain the `World` module. All subsequent nodes will live
 
 #### Avatars
 
-Any node that implements the `Avatar` module is a valid avatar. In case it's being loaded from an ITF file, the root node must implement it.
+Any node that implements the `Avatar` module is a valid avatar. In case it's being loaded from an ISL file, the root node must implement it.
 
 #### Ownership
 
