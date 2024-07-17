@@ -13,11 +13,11 @@ Nodes are the unit of the scene tree. They are interrelated objects that inherit
 
 | Method | Returns |
 |--------|---------|
-| `addChild(Node child, String childName = "")` | `Null` |
-| `addModule(Module module)` | `Null` |
+| `addChild(Node child, String childName = "")` | `Undefined` |
+| `addModule(Module module)` | `Undefined` |
 | `addTemplate(Template template, String childName)` | `Node` |
-| `callEvent(String eventName, Object eventData)` | `Null` |
-| `exitTree()` | `Null` |
+| `callEvent(String eventName, Object eventData)` | `Undefined` |
+| `exitTree()` | `Undefined` |
 | `getChild(String childName)` | `Node` |
 | `getChildCount()` | `Number` |
 | `getChildren()` | `Node[]` |
@@ -34,11 +34,11 @@ Nodes are the unit of the scene tree. They are interrelated objects that inherit
 | `hasChild(String childName)` | `Boolean` |
 | `hasModule(String moduleName)` | `Boolean` |
 | `hasSibling(String siblingName)` | `Boolean` |
-| `registerEvent(String eventName, Function callback)` | `Null` |
-| `removeChild(String childName)` | `Null` |
-| `removeModule(String moduleName, Number moduleIndex = 0)` | `Null` |
+| `registerEvent(String eventName, Function callback)` | `Undefined` |
+| `removeChild(String childName)` | `Undefined` |
+| `removeModule(String moduleName, Number moduleIndex = 0)` | `Undefined` |
 | `setName(String newName)` | `Boolean` |
-| `unregisterEvent(String eventName, Function callback)` | `Null` |
+| `unregisterEvent(String eventName, Function callback)` | `Undefined` |
 
 ## Property descriptions
 
@@ -102,7 +102,7 @@ Triggers an event, sending the free to setup information through the `eventData`
 
 ### `Node` getChild(`String` childName)
 
-Attempts to retrieve a child node with the specified name. If there's none, it will return `Null`.
+Attempts to retrieve a child node with the specified name. If there's none, it will return `Undefined`.
 
 ### `Number` getChildCount()
 
@@ -155,7 +155,7 @@ Returns the parent of the node.
 Returns a sibling of this node with the specified name.
 
 > [!WARNING]
-> Looking up for the current node's name will return `Null`, as `this` is excluded when looking for siblings.
+> Looking up for the current node's name will return `Undefined`, as `this` is excluded when looking for siblings.
 
 ### `Node[]` getSiblings()
 

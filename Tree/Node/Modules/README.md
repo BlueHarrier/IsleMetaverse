@@ -12,14 +12,14 @@ Modules are handled through the use of events that are periodically called by th
 
 | Method | Returns | Required |
 |--------|---------|----------|
-| `enterNode()` | `Null` | No, but pointless not to implement |
-| `exitNode()` | `Null` | No |
+| `enterNode()` | `Undefined` | No, but pointless not to implement |
+| `exitNode()` | `Undefined` | No |
 
 ## Property descriptions
 
 ### `Node` node
 
-The node that the module belongs to. It will be remain `Null` until it's the module is added to any node, and it will reset on every update. Its value will remain valid right before `enterNode()` is called to after `exitNode()` is executed.
+The node that the module belongs to. It will be remain `Undefined` until it's the module is added to any node, and it will reset on every update. Its value will remain valid right before `enterNode()` is called to after `exitNode()` is executed.
 
 ## Method descriptions
 
