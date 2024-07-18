@@ -15,7 +15,7 @@ The Isle ecosystem is built around a few key concepts, which are used to organiz
 - [Avatars](./Avatars/): Are the way the user interfaces with the ecosystem. They're templates that get bound to the user on connect.
 - [Worlds](./Worlds/): Are the top level of the hierarchy tree. They're the root of the tree, and they contain all the other nodes and templates, but they can also exist within other elements of the tree.
 - [Artifacts](./Artifacts/): Are other templates that be summoned by users, and can serve multiple purposes, like entertainment, information, or even as a way to interact with the world.
-- [Runner](./Runner/): The runner is the application that connects the user to the ecosystem. Think about it like a web browser, but for the metaverse.
+- [Gateway](./Gateway/): The gateway is the application that connects the user to the ecosystem. Think about it like a web browser, but for the metaverse.
 - [Isle](./Isle/): Isles are instances of the ecosystem, basically, servers where a tree is hosted. They can be public or private, and be hosted by anyone, anywhere. They can implement their own login system, or use a third-party one, and they can have their own rules and restrictions. They can also be linked to other isles, forming a network of isles. Back to the previous example, think about it like a website, but "multiplayer", for the metaverse.
 
 ### For developers

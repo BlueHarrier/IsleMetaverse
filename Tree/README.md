@@ -122,7 +122,7 @@ This generated resource can be accessed in `repo://nonexistent/path`:
 
 ## Coconuts (WIP)
 
-Coconuts (as usually found in tropical isles) are they codename selected for the WebAssembly implementation of the ecosystem. As it's thought so far, the interaction is going to be interlaced between files and templates, and so, the API is more strict than web is. This is because a established environment is needed to run semi-native applications. For this, it's been chosen a Linux environment, with some extra services that allow for all the calls to be made. The API is going to be designed for Rust, as it's more modern and safe than C and C++, as well as easier to maintain in the future, though, virtually any language can be used to interact with the API, as long as it can be compiled to WebAssembly. The files that are going to be using are, of course `.wasm` files, but in order to differentiate libraries from executables, these last ones use the extension `.nut`. Coconuts (nuts for short) are not only a way to run the ecosystem, just like JavaScript and TypeScript, but also faster, more secure, and with additional access to lower level APIs, like Vulkan and OpenGL, which are going to be used to render the ecosystem (implementations can translate calls to DirectX if they need to, but Vulkan is highly encouraged). This allows for custom ecosystem engines to be made, replacing the default runner, and also opens the door to create native operating systems designed specifically for the ecosystem, but can also run other applications.
+Coconuts (as usually found in tropical isles) are they codename selected for the WebAssembly implementation of the ecosystem. As it's thought so far, the interaction is going to be interlaced between files and templates, and so, the API is more strict than web is. This is because a established environment is needed to run semi-native applications. For this, it's been chosen a Linux environment, with some extra services that allow for all the calls to be made. The API is going to be designed for Rust, as it's more modern and safe than C and C++, as well as easier to maintain in the future, though, virtually any language can be used to interact with the API, as long as it can be compiled to WebAssembly. The files that are going to be using are, of course `.wasm` files, but in order to differentiate libraries from executables, these last ones use the extension `.nut`. Coconuts (nuts for short) are not only a way to run the ecosystem, just like JavaScript and TypeScript, but also faster, more secure, and with additional access to lower level APIs, like Vulkan and OpenGL, which are going to be used to render the ecosystem (implementations can translate calls to DirectX if they need to, but Vulkan is highly encouraged). This allows for custom ecosystem engines to be made, replacing the default gateway, and also opens the door to create native operating systems designed specifically for the ecosystem, but can also run other applications.
 
 In order to run a nut, `.isl` file includes a field called `application`, which is a link directly to the `.nut` file.
 
@@ -146,7 +146,7 @@ Tree objects always have a name, but that can create a small problem: name confl
 
 ### Shifting avatars
 
-An avatar shift is the process of changing the avatar. If the established avatar is valid, while it downloads, the user can still move and interact normally, but if the avatar is invalid, the runner will request the server to give them a default avatar, and the user will be stuck in the void until the avatar is downloaded. If this change is smooth, the user won't even notice their short stay in the void.
+An avatar shift is the process of changing the avatar. If the established avatar is valid, while it downloads, the user can still move and interact normally, but if the avatar is invalid, the gateway will request the server to give them a default avatar, and the user will be stuck in the void until the avatar is downloaded. If this change is smooth, the user won't even notice their short stay in the void.
 
 ### Unbound avatars
 
@@ -154,7 +154,7 @@ An avatar that is not being used by any user, but is summoned in the world, can 
 
 ### Unbound users
 
-In the other hand, if a user doesn't have an avatar, what happens? Avatars are the interface with the ecosystem, so a user simply cannot exist without an avatar. In that case, the runner must request the server to give them an avatar. This avatar can be a default one, or even a random one, but it must be an avatar. In the meantime, the user can chill out in the void, or something.
+In the other hand, if a user doesn't have an avatar, what happens? Avatars are the interface with the ecosystem, so a user simply cannot exist without an avatar. In that case, the gateway must request the server to give them an avatar. This avatar can be a default one, or even a random one, but it must be an avatar. In the meantime, the user can chill out in the void, or something.
 
 ## Artifacts
 
