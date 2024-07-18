@@ -166,6 +166,16 @@ Similar to avatars, artifacts have a reserved prefix, which is `%`. This prefix 
 
 ## Worlds
 
+Worlds are the continent of the ecosystem. They give the environment in which objects can interact with, including the rules, the physics, and the behavior of the objects. Worlds can be anything, from a simple room, to a whole universe, and can be controlled by the user that created them. Worlds can also be shared, and even be used as templates for other worlds, or even avatars. Worlds can also be used to create pocket worlds, which are worlds inside other worlds, and can be used to create very complex applications.
+
+### Spawn points
+
+Spawn points are not required in a world, avatars would spawn at (0, 0, 0) coordinates, but they can be placed, and then managed by the world as it needs to. Also, by default avatars will spawn as children of the world node, but it can also be changed to spawn on any other node, as long as it's a child of the world node. This also includes spawning inside other pocket worlds within the main one.
+
+### Griefing prevention
+
+To prevent other users to force people into pocket worlds, the only means of traveling between them is either a script doing the job, which requires a higher hierarchy, or a portal, which can only be access by the user's interaction, knowing that they are going to be teleported to another world.
+
 ### Pocket worlds
 
 Pocket worlds, or more commonly named "dimensions", is a way in which the ecosystem can run multiple worlds at once, in the same environment. This is done by adding the `World` module to another node inside the already existing tree. Avatars will only be able to see and interact with elements that are in the same world as them, and travel between them using portals (class `Portal`). Portals can be instantiated by the scripting API, exist already in the tree, or even be created by the ISLE server. This allows for more complex applications to be made, like games, or even social networks, where users can interact with each other in different worlds, but still be in the same environment.
@@ -178,14 +188,6 @@ Pocket worlds, or more commonly named "dimensions", is a way in which the ecosys
 > In the case of the client being run locally, the user can always do this, without the need of any server's permission.
 
 Worlds can be instantiated inside everything (as long as the working hierarchy allows it), creating very interesting concepts, such as avatars holding pocket worlds, or artifacts that can be used to create new worlds. This allows for a very flexible system, where the user can create virtually anything they want, and the ecosystem will adapt to it.
-
-### Spawn points
-
-Spawn points are not required in a world, avatars would spawn at (0, 0, 0) coordinates, but they can be placed, and then managed by the world as it needs to. Also, by default avatars will spawn as children of the world node, but it can also be changed to spawn on any other node, as long as it's a child of the world node. This also includes spawning inside other pocket worlds within the main one.
-
-### Griefing prevention
-
-To prevent other users to force people into pocket worlds, the only means of traveling between them is either a script doing the job, which requires a higher hierarchy, or a portal, which can only be access by the user's interaction, knowing that they are going to be teleported to another world.
 
 ### Between-worlds interaction
 
