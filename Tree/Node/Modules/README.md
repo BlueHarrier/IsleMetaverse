@@ -2,7 +2,7 @@
 
 ## Overview
 
-Modules exist to implement behaviors to the nodes. There are plenty of different API implementations that give high performance behaviors, like physics calculations and mesh rendering, but it allows for JS and TS class implementations as well.
+Modules exist to implement behaviors to the nodes. There are plenty of different API implementations that give high performance behaviors, like physics calculations and mesh rendering, but it allows for JS class implementations as well.
 
 Modules are handled through the use of events that are periodically called by the node or other modules. In order to register and unregister them, the methods `enterNode()` and `exitNode()` are used.
 
