@@ -71,16 +71,13 @@ A collection of named `Node` children.
 
 ### `Object` modules (JSON only)
 
-A collection of the `Module` objects that compose the behavior of the node. The keys of this object are the names of the modules to attach, while the value can be a `Module` object, or an array of them, if there's more than one of that module implemented.
+A collection of the `Module` objects that compose the behavior of the node. The keys of this object are the names of the modules to attach, while the value is an array of instances of that module.
 
 #### Example
 
 ```json
 {
-    "MySingleModule": {
-        // Module settings
-    },
-    "MyMultipleModule": [
+    "MyModule": [
         {
             // Settings of the first instance of this module
         },
