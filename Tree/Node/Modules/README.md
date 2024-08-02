@@ -1,4 +1,4 @@
-# Module (interface)
+# IModule (interface)
 
 ## Overview
 

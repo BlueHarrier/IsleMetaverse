@@ -1,4 +1,4 @@
-# Resource (interface)
+# IResource (interface)
 
 ## Overview
 
