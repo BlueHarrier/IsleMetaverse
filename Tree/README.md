@@ -120,6 +120,12 @@ This generated resource can be accessed in `repo://nonexistent/path`:
 }
 ```
 
+## Templates
+
+Templates are the isolated base of the ecosystem. They are isolated parts of the tree, that can be place as children of nodes. Templates can represent several elements, and are defined using `.isl` structures. Templates are differentiated from nodes by the prefix `$`, which is used to identify them in the tree. As the first statement suggests, they are isolated, and don't allow for anything to access them directly. Instead, they're managed using events and function injections, check out [safety concerns](#safety-concerns) for more information.
+
+Templates can also have a different prefix, used to specify special types of templates. Those prefix being `@` and `%`, which are used to identify avatars and artifacts, respectively. These templates are special, have a look at [avatars](#avatars) and [artifacts](#artifacts) for more information.
+
 ## Coconuts (WIP)
 
 Coconuts (as usually found in tropical isles) are they codename selected for the WebAssembly implementation of the ecosystem. As it's thought so far, the interaction is going to be interlaced between files and templates, and so, the API is more strict than web is. This is because a established environment is needed to run semi-native applications. For this, it's been chosen a Linux environment, with some extra services that allow for all the calls to be made. The API is going to be designed for Rust, as it's more modern and safe than C and C++, as well as easier to maintain in the future, though, virtually any language can be used to interact with the API, as long as it can be compiled to WebAssembly. The files that are going to be using are, of course `.wasm` files, but in order to differentiate libraries from executables, these last ones use the extension `.nut`. Coconuts (nuts for short) are not only a way to run the ecosystem, just like JavaScript, but also faster, more secure, and with additional access to lower level APIs, like Vulkan and OpenGL, which are going to be used to render the ecosystem (implementations can translate calls to DirectX if they need to, but Vulkan is highly encouraged). This allows for custom ecosystem engines to be made, replacing the default gateway, and also opens the door to create native operating systems designed specifically for the ecosystem, but can also run other applications.
@@ -148,11 +154,14 @@ An avatar shift is the process of changing the avatar. If the established avatar
 
 ### Unbound avatars
 
-An avatar that is not being used by any user, but is summoned in the world, can be called "unbound". These avatars can be picked up and clone by users, and even being used as NPCs, or even another special and unique way to interact with world, just saying 👀. This is useful to share avatars with other users by summoning them into the world, without shifting your own.
+An avatar that is not being used by any user, but is summoned in the world, can be called "unbound". These avatars can be picked up and clone by users, and even being used as NPCs, or even another special and unique way to interact with world, just saying 👀. This is useful to share avatars with other users by summoning them into the world, without shifting one's own.
+
+> [!NOTE]
+> When cloning an avatar that is the in the scene, it will automatically cloned to a template, and so, it will be isolated from the original one, and can be modified without affecting the original one.
 
 ### Unbound users
 
-In the other hand, if a user doesn't have an avatar, what happens? Avatars are the interface with the ecosystem, so a user simply cannot exist without an avatar. In that case, the gateway must request the server to give them an avatar. This avatar can be a default one, or even a random one, but it must be an avatar. In the meantime, the user can chill out in the void, or something.
+In the other hand, if a user doesn't have an avatar, what happens? Avatars are the interface with the ecosystem, so a user simply cannot exist without an avatar. In that case, the gateway must request the server to give them an avatar. This avatar can be a default one, or even a random one, but it must be an avatar. In the meantime, the user can chill out in the void, or something, this is left to the implementor to decide.
 
 ## Artifacts
 
