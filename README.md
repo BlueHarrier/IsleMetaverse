@@ -54,9 +54,11 @@ Similar to servers, the API consists of a set of singletons, but unlike them, th
 
 The global APIs that can be accessed by artifacts and servers are:
 
-1. **System API**: Provides data related to the system, such as the client version.
-2. **File API**: Provides access to the file system, allowing restricted access to artifact specific data that they can save and read back.
+1. **Console API**: Provides access to the console, allowing artifacts to log messages to the terminal.
+2. **Input API**: Provides access to the input system, allowing artifacts to handle user input.
 3. **Network API**: Provides high level access to the network, allowing artifacts to synchronize their data between clients, and perform HTTP calls.
+4. **System API**: Provides data related to the system, such as the client version. It also provides the standard library's pointers to link and load WebAssembly modules, and file access to the inside of the artifact's coconut's files, and the artifact's local storage (saving and loading data).
+5. **World API**: Allows artifacts to instantiate new worlds, other artifacts, and to obtain information about their current world, such as the rules and server implementations.
 
 ### Coconuts
 
