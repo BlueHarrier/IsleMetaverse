@@ -52,6 +52,7 @@ Interfaces that are used to manage different aspects of the environment, such as
 
 > [!WARNING]
 > The list of flag is subject to change as the project evolves. When version 1.0 of the reference is released, the list will be considered stable and the current flags will not change positions or values, but new flags may be added.
+
 | Method | Returns |
 |--------|---------|
 | `audioServerIsDefault()` | `Boolean` |
