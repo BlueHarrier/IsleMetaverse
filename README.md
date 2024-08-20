@@ -83,6 +83,6 @@ All coconuts contain a manifest file, which contains metadata about the artifact
 
 ### Protocol
 
-> ![WARNING]
+> [!WARNING]
 > The protocol doesn't even have a proper name yet, and so, it's just called "protocol" for now.
 > Though, the purpose of it is to synchronize the artifacts between the clients, allow users to communicate through chat and voice, and to provide a way to download and upload artifacts without using a dedicated server to store them (HTTP).
