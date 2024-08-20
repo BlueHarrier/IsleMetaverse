@@ -208,7 +208,7 @@ Returns whether the audio server is a passthrough of the previous world's.
 
 ### `Number` createWorld(`Object` rules, `Object` serverBinaries)
 
-Returns the ID of the new world that has been created.
+Returns the ID of the new world that has been created. If an error ocurred, the negative value of the error code will be returned instead. Valid IDs start at 0, but the way they're specified from there on depends on the implementor of the environment.
 
 The object that represents the rules is the set of maximums of each instantiable element that the world can have, which will automatically allow or disallow the instantiation of artifacts.
 
